@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>For You 💚</title>
+</head>
+<body style="font-family: Arial; text-align: center; background-color: #01796F; color: white;">
+
+<h1>Hi my love 💕</h1>
+
+<h2>Click when you feel...</h2>
+
+<button onclick="showMessage('sad')" style="margin: 10px; padding: 10px 20px;">Click if you're sad</button>
+<button onclick="showMessage('miss')" style="margin: 10px; padding: 10px 20px;">Click if you miss me</button>
+
+<p id="message" style="margin-top: 20px;"></p>
+
+<h2>Click the letter 💌</h2>
+<a href="letter.html">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Envelope_icon.svg" width="120">
+</a>
+
+<script>
+function showMessage(type) {
+  if (type === 'sad') {
+    document.getElementById("message").innerText = "I'm always here for you 💚";
+  }
+  if (type === 'miss') {
+    document.getElementById("message").innerText = "I miss you too. I can't wait to see you again.";
+  }
+}
+</script>
+
+</body>
+</html>
